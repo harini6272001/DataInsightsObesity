@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad9_7" orientation="landscape" layout="fullscreen" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DataInsightsObesity" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8h1-HS-MVF">
+                                <rect key="frame" x="437" y="518" width="150" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Fog-0Q-2ww"/>
+                                    <constraint firstAttribute="height" constant="50" id="kaJ-w3-jYC"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" titleAlignment="center">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="login">
+                                            <attributes>
+                                                <font key="NSFont" size="22" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" systemColor="labelColor"/>
+                                    <color key="baseBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Ow-th-73b"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="d29-03-dpo">
+                                <rect key="frame" x="287" y="378" width="450" height="100"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v7b-9j-u0L">
+                                        <rect key="frame" x="0.0" y="0.0" width="450" height="37.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xcf-nW-k1n">
+                                        <rect key="frame" x="0.0" y="62.5" width="450" height="37.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="450" id="4eC-dW-8LX"/>
+                                    <constraint firstAttribute="height" constant="100" id="jSr-gQ-cD9"/>
+                                </constraints>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <mask key="constraints">
+                                        <include reference="jSr-gQ-cD9"/>
+                                    </mask>
+                                </variation>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NVO_BIG.D" translatesAutoresizingMaskIntoConstraints="NO" id="3Eh-Ht-h2J">
+                                <rect key="frame" x="212" y="128" width="600" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="R2o-Qf-CCG">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="100"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="600" id="iom-6i-j0X">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="500"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.0" green="0.098039215686274508" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8h1-HS-MVF" secondAttribute="bottom" constant="200" id="5Ou-T8-weT">
+                                <variation key="heightClass=compact-widthClass=compact" constant="100"/>
+                            </constraint>
+                            <constraint firstItem="8h1-HS-MVF" firstAttribute="top" secondItem="d29-03-dpo" secondAttribute="bottom" constant="40" id="A38-wj-0ac">
+                                <variation key="heightClass=compact-widthClass=compact" constant="50"/>
+                            </constraint>
+                            <constraint firstItem="d29-03-dpo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qru-md-QxI"/>
+                            <constraint firstItem="3Eh-Ht-h2J" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dnd-Pk-5hT"/>
+                            <constraint firstItem="8h1-HS-MVF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="nHj-y9-4WI"/>
+                            <constraint firstItem="d29-03-dpo" firstAttribute="top" secondItem="3Eh-Ht-h2J" secondAttribute="bottom" constant="50" id="w0U-MX-eqL"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="login_button" destination="8h1-HS-MVF" id="7hp-Er-Kdt"/>
+                        <outlet property="nniLogo" destination="3Eh-Ht-h2J" id="lZB-JZ-wB6"/>
+                        <outlet property="password_outlet" destination="xcf-nW-k1n" id="TU1-bv-v2j"/>
+                        <outlet property="username_outlet" destination="v7b-9j-u0L" id="azm-1f-MpO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.6640625" y="-27.672035139092237"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="NVO_BIG.D" width="801.5" height="571.5"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
