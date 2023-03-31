@@ -23,6 +23,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBAction func login(_ sender: Any) {
         print("Logged in!")
         
+        performSegue(withIdentifier: "goToDashboard", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToDashboard" {
+            guard let vc = segue.destination as? DashboardViewController else {return}
+            self.present(vc, animated: true)
+        }
     }
 }
 

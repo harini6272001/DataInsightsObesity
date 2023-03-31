@@ -94,11 +94,22 @@
                         <outlet property="nniLogo" destination="3Eh-Ht-h2J" id="lZB-JZ-wB6"/>
                         <outlet property="password_outlet" destination="xcf-nW-k1n" id="TU1-bv-v2j"/>
                         <outlet property="username_outlet" destination="v7b-9j-u0L" id="azm-1f-MpO"/>
+                        <segue destination="qjO-yC-QLq" kind="show" identifier="goToDashboard" id="jrP-kA-GXf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="130.6640625" y="-27.672035139092237"/>
+        </scene>
+        <!--DashboardVC-->
+        <scene sceneID="1bw-E2-61h">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Dashboard" referencedIdentifier="DashboardVC" id="qjO-yC-QLq" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="nw9-X7-RAq"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wLH-dz-O3d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="606" y="-42"/>
         </scene>
     </scenes>
     <resources>
