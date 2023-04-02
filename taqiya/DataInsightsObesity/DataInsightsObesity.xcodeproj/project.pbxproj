@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8788439829DA1C4500C653B0 /* Chart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8788439729DA1C4500C653B0 /* Chart.swift */; };
+		8788439B29DA1C8300C653B0 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 8788439A29DA1C8300C653B0 /* SwiftUICharts */; };
 		D61AAF8C29D093A200DFCD65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61AAF8B29D093A200DFCD65 /* AppDelegate.swift */; };
 		D61AAF8E29D093A200DFCD65 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61AAF8D29D093A200DFCD65 /* SceneDelegate.swift */; };
 		D61AAF9029D093A200DFCD65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61AAF8F29D093A200DFCD65 /* ViewController.swift */; };
@@ -18,6 +20,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8788439729DA1C4500C653B0 /* Chart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chart.swift; sourceTree = "<group>"; };
 		D61AAF8829D093A200DFCD65 /* DataInsightsObesity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DataInsightsObesity.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D61AAF8B29D093A200DFCD65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D61AAF8D29D093A200DFCD65 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -35,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8788439B29DA1C8300C653B0 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +70,7 @@
 				E192F15129D3D3D800B6E4E5 /* DashboardViewController.swift */,
 				D61AAF9129D093A200DFCD65 /* Main.storyboard */,
 				E192F14F29D3C04700B6E4E5 /* Dashboard.storyboard */,
+				8788439729DA1C4500C653B0 /* Chart.swift */,
 				D61AAF9429D093A300DFCD65 /* Assets.xcassets */,
 				D61AAF9629D093A300DFCD65 /* LaunchScreen.storyboard */,
 				D61AAF9929D093A300DFCD65 /* Info.plist */,
@@ -89,6 +94,9 @@
 			dependencies = (
 			);
 			name = DataInsightsObesity;
+			packageProductDependencies = (
+				8788439A29DA1C8300C653B0 /* SwiftUICharts */,
+			);
 			productName = DataInsightsObesity;
 			productReference = D61AAF8829D093A200DFCD65 /* DataInsightsObesity.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +125,9 @@
 				Base,
 			);
 			mainGroup = D61AAF7F29D093A200DFCD65;
+			packageReferences = (
+				8788439929DA1C8300C653B0 /* XCRemoteSwiftPackageReference "ChartView" */,
+			);
 			productRefGroup = D61AAF8929D093A200DFCD65 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -145,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8788439829DA1C4500C653B0 /* Chart.swift in Sources */,
 				D61AAF9029D093A200DFCD65 /* ViewController.swift in Sources */,
 				D61AAF8C29D093A200DFCD65 /* AppDelegate.swift in Sources */,
 				D61AAF8E29D093A200DFCD65 /* SceneDelegate.swift in Sources */,
@@ -368,6 +380,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8788439929DA1C8300C653B0 /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8788439A29DA1C8300C653B0 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8788439929DA1C8300C653B0 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D61AAF8029D093A200DFCD65 /* Project object */;
 }
