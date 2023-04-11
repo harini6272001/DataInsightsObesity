@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftUI
 
 class DashboardViewController: UIViewController, UIPickerViewDelegate, UIPickerViewDataSource, UITextFieldDelegate {
 
@@ -51,7 +52,6 @@ class DashboardViewController: UIViewController, UIPickerViewDelegate, UIPickerV
     }
 
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        print("in here")
         if textField == self.textBox {
             self.dropDown.isHidden = false
             //if you dont want the users to se the keyboard type:
@@ -59,5 +59,8 @@ class DashboardViewController: UIViewController, UIPickerViewDelegate, UIPickerV
         }
 
     }
-
+    
+    @IBSegueAction func showChart(_ coder: NSCoder) -> UIViewController? {
+        return UIHostingController(coder: coder, rootView: ContentView())
+    }
 }

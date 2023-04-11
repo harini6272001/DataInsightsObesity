@@ -37,6 +37,9 @@
                                     </backgroundConfiguration>
                                     <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Niy-ma-GBI" kind="show" destinationCreationSelector="showChart:" id="IBV-nL-LfL"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CUv-UZ-TfR">
                                 <rect key="frame" x="460" y="480" width="239" height="34"/>
@@ -142,6 +145,16 @@ IAo
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="57.8125" y="-2.34375"/>
+        </scene>
+        <!--Hosting Controller-->
+        <scene sceneID="pXa-Zj-5gQ">
+            <objects>
+                <hostingController id="Niy-ma-GBI" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="zmD-9U-uKa"/>
+                </hostingController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PrX-z4-CHi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="959" y="-2"/>
         </scene>
     </scenes>
     <resources>
